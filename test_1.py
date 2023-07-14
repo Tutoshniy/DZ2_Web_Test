@@ -41,14 +41,6 @@ def test_step2(x_selector1, x_selector2, x_selector4, btn_selector, er2):
 
 def test_step3(x_selector1, x_selector2, btn_selector, blog_button, blog_title, blog_description, blog_content,
                blog_create_but, blog_name):
-    input1 = site.find_element('xpath', x_selector1)
-    input1.clear()
-    input1.send_keys(name)
-    input2 = site.find_element('xpath', x_selector2)
-    input2.clear()
-    input2.send_keys(passw)
-    btn = site.find_element('css', btn_selector)
-    btn.click()
     blog_button = site.find_element('xpath', blog_button)
     blog_button.click()
     time.sleep(2)
